@@ -1,0 +1,106 @@
+
+/* -----------------------------
+   Estilos Gerais
+------------------------------ */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* -----------------------------
+   Cabeçalho
+------------------------------ */
+
+header {
+  background-color: #0066cc;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* -----------------------------
+   Menu principal
+------------------------------ */
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  display: block;
+}
+
+/* -----------------------------
+   Submenu (por hover)
+------------------------------ */
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #004999;
+  list-style: none;
+  padding: 0;
+  min-width: 180px;
+}
+
+.submenu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+/* -----------------------------
+   Conteúdo principal
+------------------------------ */
+
+main {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/* -----------------------------
+   Divisões de conteúdo
+------------------------------ */
+
+.conteudo {
+  margin-bottom: 20px;
+}
+
+/* -----------------------------
+   Rodapé
+------------------------------ */
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 16px;
+  margin-top: 20px;
+}
