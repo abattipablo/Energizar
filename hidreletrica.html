@@ -2,68 +2,95 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Energia Hidrelétrica - Energiza</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Energiza</h1>
-    <nav>
+    <nav aria-label="Menu principal">
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="energia-solar.html">Energia Solar</a></li>
         <li><a href="energia-eolica.html">Energia Eólica</a></li>
         <li><a href="biomassa.html">Biomassa</a></li>
-        <li><a href="hidreletrica.html">Hidrelétrica</a></li>
+        <li><a href="hidreletrica.html" aria-current="page">Hidrelétrica</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
+  
   <main>
-    <div class="conteudo">
-      <h1>Energia Hidrelétrica</h1>
-      <p>
-          A energia hidrelétrica é gerada a partir do aproveitamento do movimento das águas dos rios. Por meio de barragens e turbinas, a força da água é transformada em energia elétrica. É a principal fonte de geração de eletricidade no Brasil.
-      </p>
-  
-      <h2>Breve História</h2>
-      <p>
-          O uso da energia da água começou com moinhos na Antiguidade. A primeira usina hidrelétrica moderna foi construída em 1882, nos EUA. No Brasil, a Usina de Marmelos (MG) foi pioneira em 1889. Desde então, grandes projetos como Itaipu e Belo Monte consolidaram o país como um dos maiores produtores mundiais dessa energia.
-      </p>
-  
-      <h2>Vantagens da Energia Hidrelétrica</h2>
-      <ul>
-          <li>Fonte renovável e limpa, com baixa emissão de poluentes.</li>
-          <li>Alta eficiência na conversão de energia.</li>
-          <li>Capacidade de armazenamento de água (reservatórios).</li>
-          <li>Contribui para o controle de enchentes e abastecimento hídrico.</li>
-          <li>Vida útil longa das usinas.</li>
-      </ul>
-  
-      <h2>Custo-Benefício</h2>
-      <p>
-          O investimento inicial é elevado, devido à construção de barragens e infraestrutura. No entanto, o custo de operação e manutenção é relativamente baixo, e a vida útil das usinas pode ultrapassar 50 anos. O retorno financeiro é garantido a longo prazo.
-      </p>
-  
-      <h2>Características Técnicas</h2>
-      <ul>
-          <li>Barragem: estrutura que armazena e controla o fluxo de água.</li>
-          <li>Turbinas: acionadas pela água para gerar energia mecânica.</li>
-          <li>Geradores: convertem energia mecânica em elétrica.</li>
-          <li>Casa de força: abriga os equipamentos de geração.</li>
-          <li>Sistemas de transmissão: levam a eletricidade gerada até os centros de consumo.</li>
-      </ul>
-  
-      <p>
-          A energia hidrelétrica é um dos pilares da matriz energética brasileira, sendo essencial para garantir a segurança energética e promover o desenvolvimento do país.
-      </p>
-  </div>
-  <div class="imagem">
-    <img src="/img/hidreletrica.jpg" alt="Usina">
-  </div>
-  
+    <article class="conteudo-principal">
+      <section id="introducao">
+        <h1>Hidrelétricas: Base da Matriz Brasileira</h1>
+        <p>Responsáveis por 58.6% da geração nacional (ONS, 2023), as hidrelétricas brasileiras destacam-se pelo:</p>
+        <ul>
+          <li>Sistema de reservatórios (45% da capacidade)</li>
+          <li>Fator de capacidade médio de 55%</li>
+          <li>Custo nivelado (LCOE) de USD 45/MWh</li>
+        </ul>
+      </section>
+      
+      <section id="comparativo">
+        <h2>Comparativo Internacional</h2>
+        <div class="tabela">
+          <table>
+            <tr>
+              <th>País</th>
+              <th>Capacidade (GW)</th>
+              <th>% Matriz</th>
+            </tr>
+            <tr>
+              <td>China</td>
+              <td>370</td>
+              <td>17.4%</td>
+            </tr>
+            <tr>
+              <td>Brasil</td>
+              <td>109</td>
+              <td>58.6%</td>
+            </tr>
+            <tr>
+              <td>Canadá</td>
+              <td>81</td>
+              <td>60.2%</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      
+      <section id="grandes">
+        <h2>Grandes Usinas Brasileiras</h2>
+        <div class="grafico">
+          <h3>Top 3 em Capacidade</h3>
+          <ul class="evolucao">
+            <li><strong>Itaipu:</strong> 14 GW (Brasil/Paraguai)</li>
+            <li><strong>Belo Monte:</strong> 11.2 GW (PA)</li>
+            <li><strong>Tucuruí:</strong> 8.5 GW (PA)</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="futuro">
+        <h2>Desafios Futuros</h2>
+        <ul>
+          <li>Restrições ambientais para novos projetos</li>
+          <li>Mudanças climáticas afetando vazões</li>
+          <li>Necessidade de modernização das usinas antigas</li>
+        </ul>
+      </section>
+    </article>
+    
+    <aside class="imagem-destaque">
+      <figure>
+        <img src="/img/hidreletrica.jpg" alt="Usina Hidrelétrica">
+        <figcaption>Usina hidrelétrica gerando energia limpa</figcaption>
+      </figure>
+    </aside>
   </main>
+  
   <footer>
     <p>&copy; 2025 Energiza - Todos os direitos reservados.</p>
   </footer>

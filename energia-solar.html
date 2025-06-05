@@ -2,17 +2,17 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Energia Solar - Energiza</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Energiza</h1>
-    <nav>
+    <nav aria-label="Menu principal">
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
-        <li><a href="energia-solar.html">Energia Solar</a></li>
+        <li><a href="energia-solar.html" aria-current="page">Energia Solar</a></li>
         <li><a href="energia-eolica.html">Energia Eólica</a></li>
         <li><a href="biomassa.html">Biomassa</a></li>
         <li><a href="hidreletrica.html">Hidrelétrica</a></li>
@@ -20,50 +20,86 @@
       </ul>
     </nav>
   </header>
+  
   <main>
-    <div class="conteudo">
-      <h1>Energia Solar</h1>
-      <p>
-          A energia solar é uma das fontes renováveis mais promissoras e sustentáveis da atualidade. Ela consiste na conversão da luz do Sol em eletricidade ou calor, podendo ser utilizada para diversos fins, como abastecimento de residências, indústrias e sistemas de irrigação.
-      </p>
-  
-      <h2>Breve História</h2>
-      <p>
-          O uso da energia solar tem raízes antigas. Civilizações como os gregos e romanos já utilizavam o calor do Sol para aquecer ambientes. Em 1839, o físico Alexandre Edmond Becquerel descobriu o efeito fotovoltaico, base do funcionamento das placas solares. A primeira célula solar funcional surgiu em 1954, nos Estados Unidos. Desde então, sua aplicação se expandiu para residências, empresas e grandes usinas solares.
-      </p>
-  
-      <h2>Vantagens da Energia Solar</h2>
-      <ul>
-          <li>Fonte limpa e renovável, sem emissão de poluentes.</li>
-          <li>Redução significativa na conta de luz.</li>
-          <li>Baixa manutenção e longa durabilidade dos painéis.</li>
-          <li>Valorização do imóvel.</li>
-          <li>Maior independência energética.</li>
-      </ul>
-  
-      <h2>Custo-Benefício</h2>
-      <p>
-          Apesar do investimento inicial mais alto, o custo-benefício da energia solar é excelente. O retorno ocorre entre 4 a 7 anos e, a partir daí, o sistema gera economia e lucro. Existem financiamentos e incentivos que tornam a instalação mais viável economicamente.
-      </p>
-  
-      <h2>Características Técnicas</h2>
-      <ul>
-          <li>Painéis Fotovoltaicos: captam a luz solar e geram corrente contínua (DC).</li>
-          <li>Inversor Solar: converte a energia para corrente alternada (AC).</li>
-          <li>Estrutura de fixação: otimiza a posição dos painéis.</li>
-          <li>Sistema On-Grid: conectado à rede elétrica, com compensação de energia.</li>
-          <li>Sistema Off-Grid: usa baterias e funciona sem rede elétrica.</li>
-      </ul>
-  
-      <p>
-          A energia solar representa um passo importante rumo a um futuro mais sustentável, limpo e econômico.
-      </p>
-    </div>
-    <div class="imagem">
-      <img src="/img/energia_solar.jpg" alt="Paineis Solares">
-    </div>
-  
+    <article class="conteudo-principal">
+      <section id="introducao">
+        <h1>Energia Solar: Revolução Energética do Século XXI</h1>
+        <p>A energia solar lidera a transição para fontes renováveis, representando 3.6% da matriz elétrica global em 2022 (IRENA). No Brasil, o potencial é imenso: segundo a ABSOLAR, em 2023 ultrapassamos 30 GW de capacidade instalada, suficiente para abastecer 9 milhões de residências.</p>
+      </section>
+      
+      <section id="historia">
+        <h2>Evolução Histórica</h2>
+        <p>Da descoberta do efeito fotovoltaico por Edmond Becquerel (1839) aos painéis atuais com eficiência de 22-24%, a tecnologia evoluiu exponencialmente:</p>
+        <ul class="evolucao">
+          <li><strong>1954</strong>: Primeira célula solar prática nos Bell Labs (6% eficiência)</li>
+          <li><strong>1985</strong>: Células comerciais alcançam 15%</li>
+          <li><strong>2020</strong>: Recorde mundial de 47.1% em células multi-junção (NREL)</li>
+        </ul>
+      </section>
+      
+      <section id="vantagens">
+        <h2>Vantagens Comprovadas</h2>
+        <ul>
+          <li><strong>Redução de custos</strong>: Preço caiu 82% desde 2010 (BloombergNEF)</li>
+          <li><strong>Retorno financeiro</strong>: Payback médio de 4-7 anos no Brasil</li>
+          <li><strong>Sustentabilidade</strong>: Emissão zero durante operação</li>
+          <li><strong>Modularidade</strong>: Sistemas de 1kW a 1GW+</li>
+        </ul>
+      </section>
+      
+      <section id="tecnologia">
+        <h2>Tecnologias Emergentes</h2>
+        <div class="tabela">
+          <table>
+            <tr>
+              <th>Tecnologia</th>
+              <th>Eficiência</th>
+              <th>Custo (USD/W)</th>
+              <th>Aplicação</th>
+            </tr>
+            <tr>
+              <td>Silício monocristalino</td>
+              <td>18-22%</td>
+              <td>0.25-0.35</td>
+              <td>Residencial/Comercial</td>
+            </tr>
+            <tr>
+              <td>Filme fino (CdTe)</td>
+              <td>16-18%</td>
+              <td>0.20-0.30</td>
+              <td>Utility-scale</td>
+            </tr>
+            <tr>
+              <td>Perovskita</td>
+              <td>25.7% (lab)</td>
+              <td>0.15*</td>
+              <td>Emergente</td>
+            </tr>
+          </table>
+          <p class="fonte">*Estimativa para produção em escala (2025)</p>
+        </div>
+      </section>
+      
+      <section id="casos">
+        <h2>Casos de Sucesso no Brasil</h2>
+        <div class="estatistica">
+          <h3>Usina São Pedro (MG)</h3>
+          <p><strong>Capacidade:</strong> 1.2 GWp<br>
+          <strong>Área:</strong> 2,400 hectares<br>
+          <strong>Energia gerada:</strong> 2.5 TWh/ano (≈1 milhão de pessoas)</p>
+        </div>
+      </section>
+    </article>
+    
+    <aside class="imagem-destaque">
+      <figure>
+        <img src="/img/energia_solar.jpg" alt="Painéis Solares">
+        <figcaption>Painéis solares convertendo luz em energia</figcaption>
+      </figure>
+    </aside>
   </main>
+  
   <footer>
     <p>&copy; 2025 Energiza - Todos os direitos reservados.</p>
   </footer>

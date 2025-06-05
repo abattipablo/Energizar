@@ -2,30 +2,74 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Contato - Energiza</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Energiza</h1>
-    <nav>
+    <nav aria-label="Menu principal">
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="energia-solar.html">Energia Solar</a></li>
         <li><a href="energia-eolica.html">Energia Eólica</a></li>
         <li><a href="biomassa.html">Biomassa</a></li>
         <li><a href="hidreletrica.html">Hidrelétrica</a></li>
-        <li><a href="contato.html">Contato</a></li>
+        <li><a href="contato.html" aria-current="page">Contato</a></li>
       </ul>
     </nav>
   </header>
+  
   <main>
-    <div class="conteudo">
-      <h2>Contato</h2>
-      <p>Entre em contato com a Energiza para saber mais sobre soluções sustentáveis em geração de energia.</p>
-    </div>
+    <article class="conteudo-principal">
+      <section id="contato">
+        <h1>Fale Conosco</h1>
+        <div class="estatisticas">
+          <div class="estatistica">
+            <h3>Informações de Contato</h3>
+            <p><strong>Email:</strong> contato@energiza.com.br<br>
+            <strong>Telefone:</strong> (11) 1234-5678<br>
+            <strong>Endereço:</strong> Av. Paulista, 1000 - São Paulo/SP</p>
+          </div>
+          <div class="estatistica">
+            <h3>Horário de Atendimento</h3>
+            <p>Segunda a Sexta: 9h às 18h<br>
+            Sábado: 9h às 13h<br>
+            Domingo: Fechado</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="formulario">
+        <h2>Envie sua Mensagem</h2>
+        <form>
+          <div class="campo">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="campo">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="campo">
+            <label for="assunto">Assunto:</label>
+            <select id="assunto" name="assunto">
+              <option value="duvida">Dúvida</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="parceria">Parceria</option>
+            </select>
+          </div>
+          <div class="campo">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+          </div>
+          <button type="submit">Enviar Mensagem</button>
+        </form>
+      </section>
+    </article>
   </main>
+  
   <footer>
     <p>&copy; 2025 Energiza - Todos os direitos reservados.</p>
   </footer>

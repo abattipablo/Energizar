@@ -2,68 +2,94 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Energia de Biomassa - Energiza</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Energiza</h1>
-    <nav>
+    <nav aria-label="Menu principal">
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="energia-solar.html">Energia Solar</a></li>
         <li><a href="energia-eolica.html">Energia Eólica</a></li>
-        <li><a href="biomassa.html">Biomassa</a></li>
+        <li><a href="biomassa.html" aria-current="page">Biomassa</a></li>
         <li><a href="hidreletrica.html">Hidrelétrica</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
+  
   <main>
-    <div class="conteudo">
-      <h1>Energia de Biomassa</h1>
-      <p>
-          A energia de biomassa é gerada a partir da decomposição ou queima de matéria orgânica, como resíduos agrícolas, florestais e urbanos. É considerada uma fonte renovável, pois utiliza recursos que podem ser constantemente reabastecidos pela natureza ou pela atividade humana.
-      </p>
-  
-      <h2>Breve História</h2>
-      <p>
-          O uso da biomassa como fonte energética remonta aos primórdios da civilização, com a queima de madeira para aquecimento e cocção. Com o avanço da tecnologia, passou-se a utilizar resíduos industriais e agrícolas em processos mais eficientes para geração de energia elétrica e térmica.
-      </p>
-  
-      <h2>Vantagens da Energia de Biomassa</h2>
-      <ul>
-          <li>Aproveitamento de resíduos que seriam descartados.</li>
-          <li>Redução da emissão de gases de efeito estufa quando comparado a combustíveis fósseis.</li>
-          <li>Fonte de energia renovável e abundante.</li>
-          <li>Contribui para o desenvolvimento econômico local, especialmente na zona rural.</li>
-          <li>Geração descentralizada de energia.</li>
-      </ul>
-  
-      <h2>Custo-Benefício</h2>
-      <p>
-          O custo de implantação varia conforme o tipo de biomassa e a tecnologia usada. Em geral, apresenta bom retorno econômico e é ideal para locais com grande geração de resíduos orgânicos. Além disso, pode ser utilizada como complemento a outras fontes renováveis.
-      </p>
-  
-      <h2>Características Técnicas</h2>
-      <ul>
-          <li>Caldeiras e fornos: responsáveis pela queima ou gaseificação da biomassa.</li>
-          <li>Turbinas: convertem o calor gerado em energia elétrica.</li>
-          <li>Digestores anaeróbicos: produzem biogás a partir de resíduos orgânicos.</li>
-          <li>Armazenamento de biomassa: requer logística adequada para transporte e estocagem.</li>
-          <li>Sistemas híbridos: permitem uso combinado com solar, eólica ou hidrelétrica.</li>
-      </ul>
-  
-      <p>
-          A biomassa representa uma alternativa versátil e sustentável, aproveitando o que antes era lixo para gerar energia limpa e fomentar a economia circular.
-      </p>
-  </div>
-  <div class="imagem">
-    <img src="/img/biomassa.jpg" alt="Biomassa">
-  </div>
-  
+    <article class="conteudo-principal">
+      <section id="introducao">
+        <h1>Biomassa: Energia Circular</h1>
+        <p>Responsável por 8.4% da matriz elétrica brasileira (EPE, 2023), a biomassa transforma resíduos em energia:</p>
+        <ul>
+          <li>Bagasse de cana (62% da geração)</li>
+          <li>Cavaco de madeira (23%)</li>
+          <li>Biogás (crescimento de 30% ao ano)</li>
+        </ul>
+      </section>
+      
+      <section id="ciclo">
+        <h2>Ciclo de Carbono Neutro</h2>
+        <p>Diferente dos fósseis, a biomassa opera em ciclo fechado:</p>
+        <ol>
+          <li>CO₂ é absorvido no crescimento das plantas</li>
+          <li>Conversão em energia libera o mesmo CO₂</li>
+          <li>Novo ciclo de crescimento recaptura o carbono</li>
+        </ol>
+      </section>
+      
+      <section id="tipos">
+        <h2>Tipos de Biomassa</h2>
+        <div class="tabela">
+          <table>
+            <tr>
+              <th>Tipo</th>
+              <th>Energia (GJ/ton)</th>
+              <th>Principal Uso</th>
+            </tr>
+            <tr>
+              <td>Bagasse de cana</td>
+              <td>7.5-8.5</td>
+              <td>Cogeração</td>
+            </tr>
+            <tr>
+              <td>Cavaco de madeira</td>
+              <td>10-12</td>
+              <td>Caldeiras</td>
+            </tr>
+            <tr>
+              <td>Biogás (landfill)</td>
+              <td>18-21</td>
+              <td>Geração elétrica</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+      
+      <section id="casos">
+        <h2>Exemplo Prático</h2>
+        <div class="estatistica">
+          <h3>Usina Bonfim (SP)</h3>
+          <p><strong>Capacidade:</strong> 150 MW<br>
+          <strong>Matéria-prima:</strong> 2M ton/ano de bagasse<br>
+          <strong>Energia:</strong> 1.1 TWh/ano</p>
+        </div>
+      </section>
+    </article>
+    
+    <aside class="imagem-destaque">
+      <figure>
+        <img src="/img/biomassa.jpg" alt="Biomassa">
+        <figcaption>Processo de geração de energia a partir de biomassa</figcaption>
+      </figure>
+    </aside>
   </main>
+  
   <footer>
     <p>&copy; 2025 Energiza - Todos os direitos reservados.</p>
   </footer>

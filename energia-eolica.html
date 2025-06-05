@@ -2,68 +2,72 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <title>Energia Eólica - Energiza</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Energiza</h1>
-    <nav>
+    <nav aria-label="Menu principal">
       <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="energia-solar.html">Energia Solar</a></li>
-        <li><a href="energia-eolica.html">Energia Eólica</a></li>
+        <li><a href="energia-eolica.html" aria-current="page">Energia Eólica</a></li>
         <li><a href="biomassa.html">Biomassa</a></li>
         <li><a href="hidreletrica.html">Hidrelétrica</a></li>
         <li><a href="contato.html">Contato</a></li>
       </ul>
     </nav>
   </header>
+  
   <main>
-    <div class="conteudo">
-      <h1>Energia Eólica</h1>
-      <p>
-          A energia eólica é gerada a partir da força dos ventos, transformando a energia cinética do ar em eletricidade. É uma fonte renovável, limpa e com grande potencial de crescimento.
-      </p>
-  
-      <h2>Breve História</h2>
-      <p>
-          Desde a Antiguidade, a força dos ventos foi usada em moinhos e embarcações. Em 1887, James Blyth criou uma das primeiras turbinas para geração elétrica. Com a evolução tecnológica, a energia eólica passou a ter uso comercial em larga escala.
-      </p>
-  
-      <h2>Vantagens da Energia Eólica</h2>
-      <ul>
-          <li>Não poluente e inesgotável.</li>
-          <li>Baixo custo de manutenção após a instalação.</li>
-          <li>Reduz a dependência de combustíveis fósseis.</li>
-          <li>Possibilita geração em regiões remotas.</li>
-          <li>Parques eólicos podem gerar energia para milhares de casas.</li>
-      </ul>
-  
-      <h2>Custo-Benefício</h2>
-      <p>
-          Apesar do alto custo inicial, a energia eólica apresenta excelente custo-benefício. O retorno sobre o investimento ocorre entre 6 a 10 anos, e o custo de geração por kWh é cada vez mais competitivo.
-      </p>
-  
-      <h2>Características Técnicas</h2>
-      <ul>
-          <li>Aerogeradores: transformam a energia do vento em energia elétrica.</li>
-          <li>Torres: estruturas altas para captação de ventos com mais intensidade.</li>
-          <li>Geradores: convertem a energia mecânica das pás em eletricidade.</li>
-          <li>Sistemas On-Grid/Off-Grid: podem operar conectados à rede ou de forma independente.</li>
-          <li>Velocidade do vento ideal: entre 6 e 10 m/s para operação eficiente.</li>
-      </ul>
-  
-      <p>
-          A energia eólica é uma alternativa sustentável e estratégica para o futuro energético do planeta.
-      </p>
-  </div>
-  <div class="imagem">
-    <img src="/img/energia_eolica.jpg" alt="Aerogeradores">
-  </div>
-  
+    <article class="conteudo-principal">
+      <section id="introducao">
+        <h1>Energia Eólica: Potencial e Realidade</h1>
+        <p>O Brasil ocupa a 7ª posição mundial em capacidade eólica instalada (ABEEólica, 2023), com 25 GW operacionais no Nordeste, onde os ventos alcançam fator de capacidade de 50-60%, superior à média global de 35%.</p>
+      </section>
+      
+      <section id="tecnologia">
+        <h2>Evolução Tecnológica</h2>
+        <div class="grafico">
+          <h3>Crescimento da Capacidade dos Aerogeradores</h3>
+          <ul class="evolucao">
+            <li><strong>1980:</strong> 50 kW - Rotor 15m</li>
+            <li><strong>2000:</strong> 1.5 MW - Rotor 70m</li>
+            <li><strong>2020:</strong> 12 MW - Rotor 220m (Haliade-X)</li>
+          </ul>
+        </div>
+      </section>
+      
+      <section id="mapa">
+        <h2>Potencial Brasileiro</h2>
+        <p>Segundo o Atlas Eólico Brasileiro (CEPEL):</p>
+        <ul>
+          <li><strong>Nordeste:</strong> Velocidades médias de 9-11 m/s</li>
+          <li><strong>Sul:</strong> 7-8 m/s com maior regularidade</li>
+          <li><strong>Offshore:</strong> Potencial de 700 GW no litoral</li>
+        </ul>
+      </section>
+      
+      <section id="vantagens">
+        <h2>Vantagens da Energia Eólica</h2>
+        <ul>
+          <li><strong>Eficiência:</strong> Fator de capacidade superior a 50% no NE</li>
+          <li><strong>Custo:</strong> LCOE de USD 30-50/MWh</li>
+          <li><strong>Emprego:</strong> 30 mil postos diretos no Brasil</li>
+        </ul>
+      </section>
+    </article>
+    
+    <aside class="imagem-destaque">
+      <figure>
+        <img src="/img/energia_eolica.jpg" alt="Aerogeradores">
+        <figcaption>Aerogeradores em parque eólico</figcaption>
+      </figure>
+    </aside>
   </main>
+  
   <footer>
     <p>&copy; 2025 Energiza - Todos os direitos reservados.</p>
   </footer>
